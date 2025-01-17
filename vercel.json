@@ -21,7 +21,7 @@
   "routes": [
     {
       "src": "/images/(.*)",
-      "dest": "/images/$1"
+      "dest": "/public/images/$1"
     },
     {
       "src": "/doom.pdf",
