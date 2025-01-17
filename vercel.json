@@ -4,12 +4,16 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/doom.pdf",
-      "dest": "/doom.pdf"
+      "dest": "/public/doom.pdf"
     },
     {
       "src": "/(.*)",
