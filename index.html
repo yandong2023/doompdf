@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOMPDF - Turn Your PDFs into Hell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GH26970NM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0GH26970NM');
+</script>
+</head>
+<body class="bg-black text-white">
+    <div id="game-container" class="fixed inset-0 z-[9999] hidden bg-black">
+        <div class="relative w-full h-full">
+            <iframe 
+                id="game-frame" 
+                src="./public/doom.pdf"
+                class="w-full h-full"
+                style="border: none;"
+                allow="fullscreen"
+            ></iframe>
+            <button 
+                onclick="closeGame()" 
+                class="absolute top-4 right-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md transition-colors z-[10000]"
+            >
+                Close Game
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-black/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-red-600">DOOMPDF</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-red-500">Features</a>
+                    <a href="#testimonials" class="hover:text-red-500">Testimonials</a>
+                    <a href="#faq" class="hover:text-red-500">FAQ</a>
+                </div>
+                <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition" onclick="launchGame()">
+                    Try DOOMPDF
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text">
+                Turn Your PDFs into Hell
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                Experience the most brutal PDF viewer ever created. Rip and tear through your documents like never before.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-red-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition" onclick="launchGame()">
+                    Play Now
+                </button>
+                <button class="border border-red-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-600/10 transition" onclick="launchGame()">
+                    Watch Gameplay
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Hellish Features</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center p-6">
+                    <i class="fas fa-fire text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Brutal Performance</h3>
+                    <p class="text-gray-400">Lightning-fast PDF rendering with demonic optimization.</p>
+                </div>
+                <div class="text-center p-6">
+                    <i class="fas fa-skull text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Doom-Style UI</h3>
+                    <p class="text-gray-400">Classic DOOM-inspired interface with modern functionality.</p>
+                </div>
+                <div class="text-center p-6">
+                    <i class="fas fa-gun text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Weapon Cursors</h3>
+                    <p class="text-gray-400">Navigate with various DOOM weapons as your cursor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Survivor Stories</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-md border border-red-600">
+                    <p class="text-gray-400 mb-6">"Never thought reading PDFs could be this intense. The chainsaw bookmark feature is absolutely brutal!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-red-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Marine Commander</h4>
+                            <p class="text-gray-500">PDF Slayer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Demonic Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-gray-900 p-6 rounded-md border border-red-600/50">
+                    <h3 class="text-xl font-semibold mb-4">Is DOOMPDF actually a game?</h3>
+                    <p class="text-gray-400">Yes! It's a fully functional PDF viewer disguised as a DOOM-style game. Read documents while feeling like a demon slayer!</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-md border border-red-600/50">
+                    <h3 class="text-xl font-semibold mb-4">What makes it different from other PDF viewers?</h3>
+                    <p class="text-gray-400">DOOMPDF combines brutal DOOM aesthetics with practical PDF functionality. Features include weapon-styled cursors, gore effects for highlighting, and demon sound effects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-red-900">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-600">DOOMPDF</h3>
+                    <p class="text-gray-400">Where PDFs meet hell. Rip and tear through your documents.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-red-500">Home</a></li>
+                        <li><a href="#features" class="hover:text-red-500">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-red-500">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-red-500">FAQ</a></li>
+                        <li><a href="#" class="hover:text-red-500">Contact</a></li>
+                        <li><a href="#" class="hover:text-red-500">Bug Reports</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow the Carnage</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-red-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-red-900/50 text-center text-gray-400">
+                <p>&copy; 2024 DOOMPDF. All souls reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function launchGame() {
+            const container = document.getElementById('game-container');
+            if (container) {
+                container.classList.remove('hidden');
+                console.log('Game launched');
+            }
+        }
+
+        function closeGame() {
+            const container = document.getElementById('game-container');
+            if (container) {
+                container.classList.add('hidden');
+                console.log('Game closed');
+            }
+        }
+    </script>
+</body>
+</html> 
