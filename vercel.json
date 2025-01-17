@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/doom.pdf",
+      "dest": "/doom.pdf"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
