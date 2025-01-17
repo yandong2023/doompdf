@@ -26,7 +26,7 @@
         <div class="relative w-full h-full">
             <iframe 
                 id="game-frame" 
-                src="/doom.pdf"
+                src="/public/doom.pdf"
                 class="w-full h-full"
                 style="border: none;"
                 allow="fullscreen"
@@ -70,7 +70,7 @@
                 <button class="bg-red-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition" onclick="launchGame()">
                     Play Now
                 </button>
-                <button class="border border-red-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-600/10 transition" onclick="launchGame()">
+                <button class="border border-red-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-red-600/10 transition" onclick="watchGameplay()">
                     Watch Gameplay
                 </button>
             </div>
@@ -177,6 +177,27 @@
         </div>
     </footer>
 
+    <!-- 添加视频模态框 -->
+    <div id="video-container" class="fixed inset-0 z-[9999] hidden bg-black/90">
+        <div class="relative w-full h-full flex items-center justify-center p-4">
+            <iframe 
+                id="video-frame" 
+                width="960" 
+                height="540" 
+                src="https://www.youtube.com/embed/V8PYG_BPbpg"
+                class="max-w-full max-h-[80vh]"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <button 
+                onclick="closeVideo()" 
+                class="absolute top-4 right-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md transition-colors z-[10000]"
+            >
+                Close Video
+            </button>
+        </div>
+    </div>
+
     <script>
         function launchGame() {
             const container = document.getElementById('game-container');
@@ -191,6 +212,23 @@
             if (container) {
                 container.classList.add('hidden');
                 console.log('Game closed');
+            }
+        }
+
+        function watchGameplay() {
+            const container = document.getElementById('video-container');
+            if (container) {
+                container.classList.remove('hidden');
+            }
+        }
+
+        function closeVideo() {
+            const container = document.getElementById('video-container');
+            const frame = document.getElementById('video-frame');
+            if (container) {
+                container.classList.add('hidden');
+                // 重置视频
+                frame.src = frame.src;
             }
         }
     </script>

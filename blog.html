@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOMPDF Blog - The Story Behind Playing DOOM in PDF Files</title>
+    <meta name="description" content="Discover how DOOMPDF brings the classic DOOM game to life inside PDF files. Learn about the technical implementation, development journey, and innovative features.">
+    <meta name="keywords" content="doompdf blog, doom in pdf, pdf gaming, interactive pdf, doom port, javascript pdf">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-black/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold text-red-600">DOOMPDF</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="hover:text-red-500">Home</a>
+                    <a href="/#features" class="hover:text-red-500">Features</a>
+                    <a href="/#faq" class="hover:text-red-500">FAQ</a>
+                    <a href="/blog.html" class="text-red-500">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="pt-32 pb-20 px-6">
+        <article class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8">The Story of DOOMPDF: Playing DOOM Inside PDF Files</h1>
+            
+            <div class="prose prose-invert max-w-none">
+                <div class="mb-12">
+                    <p class="text-xl text-gray-400 mb-8">
+                        DOOMPDF represents a groundbreaking achievement in interactive PDF technology, allowing users to play the classic DOOM game directly within a PDF file. This innovative project pushes the boundaries of what's possible with PDF documents.
+                    </p>
+                    
+                    <h2 class="text-3xl font-bold mb-6 text-red-500">Technical Innovation</h2>
+                    <p class="mb-4">
+                        At its core, DOOMPDF leverages the JavaScript capabilities built into PDF files. Using an older version of Emscripten, the project compiles C code into asm.js, making it compatible with PDF viewers that support JavaScript execution.
+                    </p>
+                    <p class="mb-8">
+                        The game's display is ingeniously rendered using ASCII characters in text fields, creating a six-color monochrome display. While the performance might be limited to around 80ms per frame, the game remains perfectly playable and maintains its classic charm.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mb-6 text-red-500">Interactive PDF Revolution</h2>
+                    <p class="mb-4">
+                        DOOMPDF demonstrates that PDFs can be more than static documents. By utilizing the limited JavaScript support in modern browsers, the project creates an interactive gaming experience while working within the security constraints of PDF viewers.
+                    </p>
+                    <p class="mb-8">
+                        The input system is cleverly designed using text fields and buttons, allowing players to control the game naturally despite the limitations of the PDF format.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mb-6 text-red-500">Development Journey</h2>
+                    <p class="mb-4">
+                        Created by a talented high school student, DOOMPDF joins the legendary lineup of unusual DOOM ports. The project showcases both technical ingenuity and creative problem-solving, proving that innovation knows no age limits.
+                    </p>
+                    <p class="mb-8">
+                        The development process involved overcoming numerous technical challenges, from handling user input to optimizing performance within the constraints of PDF JavaScript execution.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mb-6 text-red-500">Future Implications</h2>
+                    <p class="mb-4">
+                        DOOMPDF opens up new possibilities for interactive PDF content. While gaming might not be the primary use case for PDFs, this project demonstrates the potential for creating engaging, interactive documents that go beyond traditional static content.
+                    </p>
+                    <p class="mb-8">
+                        The success of DOOMPDF might inspire future developers to explore other creative applications of PDF interactivity, potentially revolutionizing how we think about document formats.
+                    </p>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8">
+                    <h3 class="text-2xl font-bold mb-4">Try It Yourself</h3>
+                    <p class="mb-4">
+                        Ready to experience DOOMPDF? Head back to our <a href="/" class="text-red-500 hover:text-red-400">home page</a> and click "Play Now" to start your adventure in PDF gaming!
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-red-900">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 DOOMPDF. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
