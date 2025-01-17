@@ -20,6 +20,10 @@
   ],
   "routes": [
     {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
       "src": "/doom.pdf",
       "dest": "/public/doom.pdf"
     },
