@@ -2,27 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.ico",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "public/**",
+      "src": "*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/doom.pdf",
-      "dest": "/public/doom.pdf"
-    },
     {
       "src": "/blog",
       "dest": "/blog.html"
